@@ -35,7 +35,7 @@ checkout-service/
 │  │
 │  ├─ resources/
 │  │  ├─ openapi.yaml             # API contract
-│  │  └─ application.properties   # (optional) tax/shipping config
+│  │  └─ application.properties
 ```
 
 ## How to Build 
