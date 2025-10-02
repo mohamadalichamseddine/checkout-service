@@ -31,7 +31,7 @@ checkout-service/
 │  │ ├─ order/
 │  │ ├─ pricing/
 │  │ ├─ payment/
-│  │ └─ persistence/
+│  ├─ persistence/
 │  │
 │  ├─ resources/
 │  │  ├─ openapi.yaml             # API contract
