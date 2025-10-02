@@ -30,7 +30,7 @@ checkout-service/
 │  │ ├─ cart/
 │  │ ├─ order/
 │  │ ├─ pricing/
-│  │ ├─ payment/
+│  │ └─ payment/
 │  ├─ persistence/
 │  │
 │  ├─ resources/
