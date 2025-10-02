@@ -38,19 +38,13 @@ checkout-service/
 │  │  └─ application.properties
 ```
 
-## How to Build 
+## Build and Run 
 ```
-mvn -q package
-java -jar target/checkout-service.jar // Check about that
+mvn clean package
+java -jar target/checkout-service.jar
 ```
-
-## How to run
-To start the server:
 
 Service will be available at http://localhost:8080
-```
-mvn spring-boot:run
-```
 
 
 ## API Quickstart (How to demo - curl)
