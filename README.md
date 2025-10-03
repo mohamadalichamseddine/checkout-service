@@ -2,7 +2,7 @@
 
 ## About
 A lightweight **checkout service** built with **Java (Spring Boot)**, following clean architecture principles and documented with an **OpenAPI Specification**.  
-It demonstrates a modular approach to cart, checkout, and order management with in-memory persistence for easy demo and testing.
+It demonstrates a modular approach to cart, checkout, payment, and order management with in-memory persistence for easy demo and testing.
 
 ---
 
@@ -19,23 +19,24 @@ It demonstrates a modular approach to cart, checkout, and order management with 
 ## Project structure
 ```
 checkout-service/
-├─ pom.xml
-├─ README.md
-├─ src/
-│  ├─ Application.java
-│  ├─ api/
-│  ├─ app/       # application/service (only beans in/out)
-│  │  └─ beans/  # request/response records
-│  ├─ domain/
-│  │ ├─ cart/
-│  │ ├─ order/
-│  │ ├─ pricing/
-│  │ └─ payment/
-│  ├─ persistence/
+├─ src/main/
+│  ├─ java/com/checkoutservice/
+│  │  ├─ api/			# API Layer (Controllers / REST endpoints)
+│  │  ├─ app/       	# Application Layer (Orchestration)
+│  │  │  └─ beans/			# request/response beans
+│  │  ├─ domain/		# Core business logic
+│  │  │  ├─ cart/
+│  │  │  ├─ order/
+│  │  │  ├─ pricing/
+│  │  │  └─ payment/
+│  │  └─ persistence/	# Persistance Layer (Infra / Repository contracts)
 │  │
 │  ├─ resources/
-│  │  ├─ openapi.yaml             # API contract
+│  │  ├─ openapi.yaml   # API contract
 │  │  └─ application.properties
+│  
+├─ pom.xml
+└─ README.md
 ```
 
 ## Build and Run 
